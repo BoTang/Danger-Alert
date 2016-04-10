@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/backgrpic">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/msg"
+        android:layout_weight="0.3"
+        android:hint="please input msg you want to send in emergent situation"
+        android:background="#72f7f5ca"
+        android:singleLine="false"
+        android:layout_margin="5dp"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/num"
+        android:hint="please put emergecy contact number here"
+        android:layout_weight="0.1"
+        android:background="#88f8f4af"
+        android:layout_marginTop="20dp"
+        android:layout_margin="5dp"
+        android:paddingLeft="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submit"
+        android:background="@color/button_material_light"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#8afab35c"
+        android:drawableTint="@drawable/abc_btn_radio_to_on_mtrl_000"
+        android:drawableTintMode="src_atop" />
+
+    <Button
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        android:id="@+id/back"
+        android:backgroundTint="#8afab35c"
+        android:drawableTint="@drawable/abc_btn_radio_to_on_mtrl_000"
+        android:drawableTintMode="src_atop" />
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgrpic"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="Protection On/OFF"
+            android:id="@+id/call"
+
+            android:layout_marginTop="123dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="41dp"
+            android:background="#87d15efb" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="Setting"
+            android:id="@+id/setting"
+            android:layout_below="@+id/call"
+            android:layout_alignEnd="@+id/call"
+            android:background="#834ff349" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="Upload"
+            android:id="@+id/upload"
+            android:layout_above="@+id/exit"
+            android:layout_toEndOf="@+id/call"
+            android:background="#9960dcfb" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="Exit"
+            android:id="@+id/exit"
+            android:layout_below="@+id/call"
+            android:layout_toEndOf="@+id/call"
+            android:background="#94f44040" />
+    </RelativeLayout>
+</LinearLayout>
